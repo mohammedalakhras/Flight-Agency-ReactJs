@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react';
+import React  from 'react';
 import classes from './Traveling.module.css';
 
 const Traveling = () => {
   return (
-    <Fragment>
+    <>
       <div className={classes.traveling_container}>
       <div className={classes.traveling}>
        : المسافر 1 
@@ -13,7 +13,7 @@ const Traveling = () => {
       </div>
       </div>
      
-    </Fragment>
+    </>
   )
 }
 
