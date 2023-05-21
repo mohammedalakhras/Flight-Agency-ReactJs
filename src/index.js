@@ -6,6 +6,7 @@ import RootLayout from './RootLayout';
 import App from './App';
 import Home from './Component/Home';
 import { fetch } from './Component/fetchFromServer';
+import NumberOfTicket from '/Component/NumberOfTicket/NumberOfTicket';
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
@@ -13,7 +14,10 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <RootLayout />,
-    children: [{ path: '/', element: <Home />, loader: fetch }],
+    children: [
+      { path: '/', element: <Home />, loader: fetch },
+      { path: '/NumberOfTicket', element: <NumberOfTicket /> },
+    ],
   },
 ]);
 root.render(

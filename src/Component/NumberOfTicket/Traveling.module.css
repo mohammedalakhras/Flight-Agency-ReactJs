@@ -1,0 +1,73 @@
+.traveling-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.traveling {
+  font-size: 20px;
+  margin-left: 65%;
+}
+
+.input_traveling {
+  align-self: center;
+  position: relative;
+  bottom: 265%;
+  left: 20%;
+}
+
+input[type='text'] {
+  width: 40%;
+}
+
+@media screen and (min-width: 320px) {
+  div.traveling-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+  }
+  .input_traveling {
+    align-self: center;
+    position: relative;
+    bottom: 225%;
+    left: 20%;
+    top: -35%;
+  }
+  .traveling {
+    font-size: 15px;
+    margin-left: 65%;
+    margin-top: 3%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .traveling-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+  }
+  .input_traveling {
+    align-self: center;
+    position: relative;
+    bottom: 225%;
+    left: 20%;
+    top: -35%;
+  }
+  .traveling {
+    font-size: 18px;
+    margin-left: 65%;
+    margin-top: 3%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .traveling-container {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 40px;
+  }
+  .input_traveling {
+    align-self: center;
+    position: relative;
+    bottom: 270%;
+    left: 20%;
+    top: -35%;
+  }
+}
