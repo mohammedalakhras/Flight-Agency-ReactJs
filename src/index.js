@@ -6,7 +6,7 @@ import RootLayout from './RootLayout';
 import App from './App';
 import Home from './Component/Home';
 import { fetch } from './Component/fetchFromServer';
-import NumberOfTicket from '/Component/NumberOfTicket/NumberOfTicket';
+import NumberOfTicket from './Component/NumberOfTicket/NumberOfTicket';
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
